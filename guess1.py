@@ -2,7 +2,10 @@
 #使用者重複去猜
 #猜錯就告訴她比較大還比較小
 import random
-r = random.randint(1, 100) #隨機產生數字
+start = int(input("請決定隨機數字範圍開始值:"))
+end = int(input('請決定隨機數字範圍結束值:'))
+
+r = random.randint(start, end) #隨機產生數字
 count = 0
 while True:
 	count = count + 1 #count += 1
